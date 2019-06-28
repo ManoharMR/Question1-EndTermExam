@@ -8,25 +8,24 @@ class Courses {
 		}
 }
 
-class ECE extends Courses{ //extend the parent class here 
+class ECE extends Courses {  
 	public String displayCourseDetails(String dept) {
-		// write or edit your code here 
-		Courses cou = new Courses();
-		String commonSubjects = cou.displayCourseDetails("ECE");
-		String subject1 = "Microprocessor"; //write the specific subjects name here
-		String subject2 = "Linear Integrated Circuits"; //write the specific subjects name here
+		Courses objECE = new Courses();
+		String commonSubjects = objECE.displayCourseDetails("ECE");
+		String subject1 = "Microprocessor"; 
+		String subject2 = "Linear Integrated Circuits"; 
 		
 		String specificSubjects = " specific subjects are:\n4. "+subject1+"\n5. "+subject2;
 		return commonSubjects+dept+specificSubjects;
 		
 	}
 }
-class Mechanical extends Courses{ //extend the parent class here 
+class Mechanical extends Courses {  
 	public String displayCourseDetails(String dept) {
-		Courses cou1 = new Courses();
-		String commonSubjects = cou1.displayCourseDetails("Mechanical");
-		String subject1 = "Fluid Mechanics"; //write the specific subjects name here
-		String subject2 = "Thermodynamics"; //write the specific subjects name here
+		Courses objMECH = new Courses();
+		String commonSubjects = objMECH.displayCourseDetails("Mechanical");
+		String subject1 = "Fluid Mechanics"; 
+		String subject2 = "Thermodynamics"; 
 		
 		String specificSubjects = " specific subjects are:\n4. "+subject1+"\n5. "+subject2;
 		return commonSubjects+dept+specificSubjects;	
@@ -34,14 +33,14 @@ class Mechanical extends Courses{ //extend the parent class here
 	}
 
 }
-class CSE extends Courses{ //extend the parent class here 
+class CSE extends Courses   { 
 	public String displayCourseDetails(String dept) {
 		
-		// write or edit your code here 
-		Courses cou2 = new Courses();
-		String commonSubjects = cou2.displayCourseDetails("CSE");
-		String subject1 = "Network Theory";
-		String subject2 = "Operating Systems"; //write the specific subjects name here
+		
+		Courses objCSE =new Courses();
+		String commonSubjects = objCSE.displayCourseDetails("CSE");
+		String subject1 = "Network Theory"; 
+		String subject2 = "Operating Systems"; 
 		
 		String specificSubjects = " specific subjects are:\n4. "+subject1+"\n5. "+subject2;
 		return commonSubjects+dept+specificSubjects;		
@@ -55,24 +54,24 @@ public class Question1 {
 		System.out.println("Choose the department:");
 		Scanner in = new Scanner(System.in);
 		int choice = in.nextInt();
-		//Question1 mn=new Question1();
+		Question1 mn=new Question1();
 		switch(choice) {
 		case 1:
 		{
-			ECE ece = new ECE();
-			System.out.println(ece.displayCourseDetails("ECE"));
+			ECE objece = new ECE();
+			System.out.println(objece.displayCourseDetails("ECE"));//call the function of the class that you initialized
 			break;
 		}
 		case 2:
 		{
-			Mechanical mechanical = new Mechanical();
-			System.out.println(mechanical.displayCourseDetails("Mechanical"));
+			Mechanical objmech = new Mechanical();
+			System.out.println(objmech.displayCourseDetails("Mechanical"));//call the function of the class that you initialized
 			break;
 		}
 		case 3:
 		{
-			CSE cse = new CSE();
-			System.out.println(cse.displayCourseDetails("CSE"));
+		    CSE objcse = new CSE();
+			System.out.println(objcse.displayCourseDetails("CSE"));//call the function of the class that you initialized
 			break;
 		}
 		default:
