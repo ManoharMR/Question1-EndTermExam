@@ -10,8 +10,8 @@ class Courses {
 
 class ECE extends Courses {  
 	public String displayCourseDetails(String dept) {
-		Courses objECE = new Courses();
-		String commonSubjects = objECE.displayCourseDetails("ECE");
+		Courses ECE = new Courses();
+		String commonSubjects = ECE.displayCourseDetails("ECE");
 		String subject1 = "Microprocessor"; 
 		String subject2 = "Linear Integrated Circuits"; 
 		
@@ -22,8 +22,8 @@ class ECE extends Courses {
 }
 class Mechanical extends Courses {  
 	public String displayCourseDetails(String dept) {
-		Courses objMECH = new Courses();
-		String commonSubjects = objMECH.displayCourseDetails("Mechanical");
+		Courses MECH = new Courses();
+		String commonSubjects = MECH.displayCourseDetails("Mechanical");
 		String subject1 = "Fluid Mechanics"; 
 		String subject2 = "Thermodynamics"; 
 		
@@ -37,8 +37,8 @@ class CSE extends Courses   {
 	public String displayCourseDetails(String dept) {
 		
 		
-		Courses objCSE =new Courses();
-		String commonSubjects = objCSE.displayCourseDetails("CSE");
+		Courses CSE =new Courses();
+		String commonSubjects = CSE.displayCourseDetails("CSE");
 		String subject1 = "Network Theory"; 
 		String subject2 = "Operating Systems"; 
 		
